@@ -82,10 +82,4 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
-  .card h1,
-  .card h3 {
-    text-align: left;
-  }
-}
 </style>

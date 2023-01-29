@@ -11,7 +11,7 @@ class ApiService {
   }
 
   findById(id: number): Promise<any> {
-    return api.get(`//v1/products/${id}`);
+    return api.get(`/v1/products/${id}`);
   }
 }
 

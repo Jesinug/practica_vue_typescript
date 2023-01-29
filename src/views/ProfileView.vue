@@ -1,15 +1,14 @@
 <template>
   <div class="profile">
-    <h1>This is a Profile view</h1>
+    <h1>Under construction</h1>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .profile {
+  .profile > h1 {
+    color: whitesmoke;
     min-height: 100vh;
-    display: flex;
     align-items: center;
+    text-align: center;
   }
-}
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="list row">
-    <div class="col-md-8">
-      <div class="input-group mb-3">
+  <div class="list-row">
+    <div class="product-list-wraper">
+      <div class="form-wraper">
         <input
           type="text"
           class="form-control"
@@ -16,40 +16,12 @@
           >
             Search
           </button>
-        </div>
-      </div>
+        </div>     
     </div>
-    <div class="col-md-6">
-      <h4>Products list</h4>
+    
+      <h2>Products list</h2>
       <ProductDetail v-for="(tutorial, index) in tutorials" :data="tutorial"/>
-
     </div>
-    <!-- <div class="col-md-6">
-      <div v-if="currentTutorial.id">
-        <h4>Current Tutorial</h4>
-        <div>
-          <label><strong>Title:</strong></label> {{ currentTutorial.title }}
-        </div>
-        <div>
-          <label><strong>Description:</strong></label>
-          {{ currentTutorial.description }}
-        </div>
-        <div>
-          <label><strong>Price:</strong></label>
-          {{ currentTutorial.price }}
-        </div>
-
-        <router-link
-          :to="'/tutorials/' + currentTutorial.id"
-          class="badge badge-warning"
-          >Edit</router-link
-        >
-      </div>
-      <div v-else>
-        <br />
-        <p>Please click on a Tutorial...</p>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -107,9 +79,6 @@ export default defineComponent({
           console.log(e);
         });
     },
-
-
-
   },
   mounted() {
     this.retrieveTutorials();
@@ -118,7 +87,44 @@ export default defineComponent({
 </script>
 
 <style>
-.list {
+.form-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product-list-wraper {
+  display: flex;
+  flex-flow: column;
+}
+
+.product-list-wraper, input {
+  align-self: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+  font-size: medium;
+}
+
+.product-list-wraper, button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.list-row h2 {
+  font-size: 40px;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.list-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: left;
   max-width: 750px;
   margin: auto;
