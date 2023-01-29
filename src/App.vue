@@ -11,7 +11,8 @@ import ListComponent from './components/ProductList.vue'
 
       <nav>
         <RouterLink to="/">Products</RouterLink>
-        <RouterLink to="/about">User profile</RouterLink>
+        <RouterLink to="/products">Products</RouterLink>
+        <RouterLink to="/profile">User profile</RouterLink>
       </nav>
     </div>
   </header>
