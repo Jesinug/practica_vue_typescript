@@ -27,6 +27,8 @@ header {
 .logo {
   display: block;
   margin: 0 auto 15px;
+  max-height: 600px;
+  max-width: 365px;
 }
 
 nav {

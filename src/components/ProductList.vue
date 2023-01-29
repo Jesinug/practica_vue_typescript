@@ -95,7 +95,7 @@ export default defineComponent({
 
 .product-list-wraper {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 
 .product-list-wraper, input {
@@ -124,7 +124,6 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   text-align: left;
   max-width: 750px;
   margin: auto;
